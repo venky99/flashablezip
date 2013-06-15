@@ -1,5 +1,7 @@
-assert(getprop("ro.product.device") == "gio" || getprop("ro.build.product") == "gio" || 
-       getprop("ro.product.device") == "GT-S5660" || getprop("ro.build.product") == "GT-S5660");
+assert(getprop("ro.product.device") == "galaxy5" || getprop("ro.build.product") == "galaxy5" || 
+       getprop("ro.product.device") == "GT-I5500" || getprop("ro.build.product") == "GT-I5500" || 
+       getprop("ro.product.device") == "GT-I5503" || getprop("ro.build.product") == "GT-I5503" || 
+       getprop("ro.product.device") == "GT-I5508" || getprop("ro.build.product") == "GT-I5508");
 mount("ext4", "EMMC", "/dev/block/stl12", "/system");
 package_extract_dir("system", "/system");
 assert(package_extract_file("boot.img", "/tmp/boot.img"),
